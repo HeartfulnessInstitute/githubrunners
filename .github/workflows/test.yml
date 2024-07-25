@@ -10,12 +10,11 @@ on:
 
 jobs:
   build:
-    runs-on: runner1
+    runs-on: self-hosted  # Specify self-hosted to use a custom runner like runner1
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: print cwd
-      run:pwd
-     
+    - name: Print current working directory
+      run: pwd
