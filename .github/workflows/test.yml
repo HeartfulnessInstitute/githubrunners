@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted  # Specify self-hosted to use a custom runner like runner1
+    runs-on: Self-Hosted-Runners-Spot
 
     steps:
     - name: Checkout code
